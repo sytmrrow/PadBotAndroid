@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campus"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_background"
+            android:padding="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/namepad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@drawable/login_background">
+
+                <TextView
+                    android:id="@+id/stuname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textColor="#000000"
+                    android:textSize="100dp"/>
+
+                <EditText
+                    android:id="@+id/edstuname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/stuname"
+                    android:hint="请输入姓名"
+                    android:textColorHint="#000000"
+                    android:textSize="70dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/numpad"
+                android:layout_below="@id/namepad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:background="@drawable/login_background">
+
+                <TextView
+                    android:id="@+id/stunum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号："
+                    android:textColor="#000000"
+                    android:textSize="100dp" />
+
+                <EditText
+                    android:id="@+id/edstunum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/stunum"
+                    android:hint="请输入学号"
+                    android:textColorHint="#000000"
+                    android:textSize="70dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numpad"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/mimalogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录"
+                    android:textSize="50dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

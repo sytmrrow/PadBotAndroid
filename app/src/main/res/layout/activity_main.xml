@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/videoButton"
+        android:layout_width="80mm"
+        android:layout_height="80dp"
+        android:text="打开视频页"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/webButton"
+        android:layout_width="80mm"
+        android:layout_height="80dp"
+        android:text="打开网页页"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/meetingButton"
+        android:layout_width="80mm"
+        android:layout_height="80dp"
+        android:text="会议室预定页"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/clientButton"
+        android:layout_width="80mm"
+        android:layout_height="80dp"
+        android:text="输入IP地址"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp" />
+
+</LinearLayout>
