@@ -17,6 +17,6 @@ public interface ApiService {
     @POST("")
     Call<ResponseBody> login();
 
-    @POST("api/processRequest_origin")
-    Call<ResponseBody>
+    @POST("app/api/processRequest_origin")
+    Call<ResponseBody> sendData(@Body PatrobotData patrobotData);
 }
