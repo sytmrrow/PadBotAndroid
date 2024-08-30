@@ -16,4 +16,7 @@ public interface ApiService {
 
     @POST("")
     Call<ResponseBody> login();
+
+    @POST("api/processRequest_origin")
+    Call<ResponseBody>
 }

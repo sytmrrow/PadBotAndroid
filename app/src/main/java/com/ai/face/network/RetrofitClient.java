@@ -8,7 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 
 public class RetrofitClient {
     private static final String BASE_URL = "http://222.200.184.32:8088/";
-    //private static final String BASE_URL2 = "http://222.200.184.74:8082/";
+    private static final String BASE_URL2 = "http://222.200.184.74:8082/";
     public static Retrofit retrofit;
 
     public static Retrofit getClient() {

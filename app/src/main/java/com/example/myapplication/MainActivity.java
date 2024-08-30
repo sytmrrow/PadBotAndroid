@@ -23,7 +23,16 @@ public class MainActivity extends AppCompatActivity {
         Button webButton = findViewById(R.id.webButton);
         Button meetingButton = findViewById(R.id.meetingButton);
         Button clientButton = findViewById(R.id.clientButton);
+        Button buttonOpenTtsDemo = findViewById(R.id.button_open_tts_demo);
 
+        buttonOpenTtsDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 创建 Intent 跳转到 TTSChinese 模块的 DemoActivity
+                Intent intent = new Intent(MainActivity.this, com.air4.ttschineseDemo.DemoActivity.class);
+                startActivity(intent);
+            }
+        });
 
         videoButton.setOnClickListener(new View.OnClickListener() {
             @Override
