@@ -25,4 +25,14 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="17dp" />
 
+    <TextView
+        android:id="@+id/recordword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="56dp"
+        android:textColor="#ffffff"/>
+
 </RelativeLayout>
