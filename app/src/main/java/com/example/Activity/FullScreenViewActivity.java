@@ -1,25 +1,31 @@
 package com.example.Activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.air4.chinesetts.tts.TtsManager;
 import com.example.myapplication.R;
 
-public class FullScreenWebViewActivity extends AppCompatActivity {
+public class FullScreenViewActivity extends AppCompatActivity {
 
     private WebView fullScreenWebView;
     private Handler handler = new Handler();
     private Runnable closeRunnable;
+    private TtsManager ttsManager;
     private static final long TIMEOUT = 30000; // 30秒无操作则关闭
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen_webview);
+
+        // 初始化TTS模块
+        ttsManager = TtsManager.getInstance();
+        ttsManager.init(this); // 确保在Activity中初始化TTS
 
         fullScreenWebView = findViewById(R.id.fullscreen_webview);
         fullScreenWebView.setWebViewClient(new WebViewClient());
@@ -28,10 +34,10 @@ public class FullScreenWebViewActivity extends AppCompatActivity {
 
         String url = getIntent().getStringExtra("url");
         if (url != null) {
-            Log.d("FullScreenWebViewActivity", "Loading URL: " + url);
+            Log.d("FullScreenViewActivity", "Loading URL: " + url);
             fullScreenWebView.loadUrl(url);
         } else {
-            Log.d("FullScreenWebViewActivity", "No URL passed!");
+            Log.d("FullScreenViewActivity", "No URL passed!");
         }
 
         // 初始化关闭Runnable

@@ -25,6 +25,14 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="17dp" />
 
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Button"
+        android:layout_centerInParent="true" />
+
+
     <TextView
         android:id="@+id/recordword"
         android:layout_width="wrap_content"

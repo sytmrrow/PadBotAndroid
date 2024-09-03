@@ -40,7 +40,7 @@ public class WebViewActivity extends AppCompatActivity {
                 if (!url.startsWith("http://") && !url.startsWith("https://")) {
                     url = "http://" + url; // 为 URL 添加 http 前缀
                 }
-                Intent intent = new Intent(this, FullScreenWebViewActivity.class);
+                Intent intent = new Intent(this, FullScreenViewActivity.class);
                 intent.putExtra("url", url);
                 startActivity(intent);
                 finish(); // 关闭当前的 Activity

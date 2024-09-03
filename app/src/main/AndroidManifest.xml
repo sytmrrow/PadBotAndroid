@@ -4,6 +4,7 @@
     package="com.example.myapplication"> <!-- 修改 package 为 com.example.myapplication -->
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -99,7 +100,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.Activity.FullScreenWebViewActivity"
+            android:name="com.example.Activity.FullScreenViewActivity"
             android:label="Full Screen Web View"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="false">
