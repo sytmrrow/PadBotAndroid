@@ -38,5 +38,13 @@
         android:text="输入IP地址"
         android:textSize="30sp"
         android:layout_marginBottom="50dp" />
+    <!-- activity_main.xml -->
+    <Button
+        android:id="@+id/button_open_tts_demo"
+        android:layout_width="80mm"
+        android:layout_height="80dp"
+        android:text="Open TTS Demo"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp" />
 
 </LinearLayout>
