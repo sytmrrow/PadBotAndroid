@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter URL"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:layout_centerVertical="true"
         android:layout_margin="17dp"
         android:inputType="textUri" />
@@ -21,7 +21,7 @@
         android:layout_below="@id/url_input"
         android:layout_centerHorizontal="true"
         android:text="Open"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:layout_marginTop="16dp" />
 
     <WebView
