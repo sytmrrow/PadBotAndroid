@@ -7,7 +7,7 @@
     android:background="@drawable/academy2"
     android:alpha="1"
     android:paddingTop="100dp"
-    tools:context=".NaviActivity">
+    tools:context="com.ai.face.NaviActivity">
 
     <!-- A CardView that contains a TextView -->
     <!--    <androidx.cardview.widget.CardView-->

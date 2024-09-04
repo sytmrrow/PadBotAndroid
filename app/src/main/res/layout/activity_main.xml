@@ -4,47 +4,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/campus3"
     android:padding="16dp"
     android:gravity="center">
 
     <Button
         android:id="@+id/videoButton"
-        android:layout_width="80mm"
-        android:layout_height="80dp"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/text_view_background"
+        android:textColor="#000000"
         android:text="打开视频页"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp" />
+        android:textSize="100sp"
+        android:layout_marginBottom="70dp" />
 
     <Button
         android:id="@+id/webButton"
-        android:layout_width="80mm"
-        android:layout_height="80dp"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/text_view_background"
+        android:textColor="#000000"
         android:text="打开网页页"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp" />
+        android:textSize="100sp"
+        android:layout_marginBottom="70dp" />
 
     <Button
         android:id="@+id/meetingButton"
-        android:layout_width="80mm"
-        android:layout_height="80dp"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/text_view_background"
+        android:textColor="#000000"
         android:text="会议室预定页"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp" />
+        android:textSize="100sp"
+        android:layout_marginBottom="70dp" />
 
     <Button
         android:id="@+id/clientButton"
-        android:layout_width="80mm"
-        android:layout_height="80dp"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/text_view_background"
+        android:textColor="#000000"
         android:text="输入IP地址"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp" />
+        android:textSize="100sp"
+        android:layout_marginBottom="70dp" />
     <!-- activity_main.xml -->
     <Button
         android:id="@+id/button_open_tts_demo"
-        android:layout_width="80mm"
-        android:layout_height="80dp"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/text_view_background"
+        android:textColor="#000000"
         android:text="Open TTS Demo"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp" />
+        android:textSize="100sp" />
 
 </LinearLayout>
