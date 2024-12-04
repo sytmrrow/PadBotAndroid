@@ -7,13 +7,17 @@
         android:id="@+id/playerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/campus2"
         android:layout_centerInParent="true" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
         android:text="返回"
+        android:textSize="70sp"
+        android:textColor="#ffffff"
         android:layout_alignParentStart="true"
         android:layout_margin="17dp" />
 
@@ -21,8 +25,29 @@
         android:id="@+id/playPauseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
         android:text="暂停"
+        android:textSize="70sp"
+        android:textColor="#ffffff"
         android:layout_alignParentEnd="true"
         android:layout_margin="17dp" />
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Button"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/recordword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="56dp"
+        android:textColor="#ffffff"/>
 
 </RelativeLayout>
